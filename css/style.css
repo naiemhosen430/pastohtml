@@ -1,0 +1,104 @@
+/* -------------------------------nav start here-------------------------------------- */
+.nav-bg-color {
+  background-color: #210221;
+}
+
+.nav-text-color {
+  color: #958695;
+}
+
+/* -------------------------------catagory start here-------------------------------------- */
+
+.catagory-boxbg-color {
+  background-color: #332b20;
+}
+
+.rounded-10 {
+  border-radius: 100px;
+}
+.custom-h {
+  height: 100px;
+}
+
+/* -------------------------------booking start here-------------------------------------- */
+.bookingnow-bg-color {
+  background-color: #210221;
+}
+
+.calander-bg-color {
+  background-color: #ebf5ed;
+}
+
+.bookingnow-imgbg-color {
+  opacity: 50%;
+  background-color: #422842;
+}
+
+.calanderbtn-color {
+  background-color: #b6acb6;
+}
+
+.rotated-element {
+  cursor: pointer;
+  transform: rotate(90deg);
+  color: #968e97;
+}
+.arraw-color {
+  cursor: pointer;
+  color: #968e97;
+}
+/* -------------------------------product start here-------------------------------------- */
+.product-bg-color {
+  background-color: #210221;
+}
+
+.product-des-color- {
+  color: #988a98;
+}
+
+.btn-bg-color {
+  background-color: #210221;
+}
+
+/* -------------------------------service start here-------------------------------------- */
+.service-headerbox-bg-color {
+  background-color: #210221;
+}
+
+.service-box-imagesize {
+  z-index: 10;
+  position: absolute;
+  background-color: wheat;
+  padding: 10px;
+  height: 120px;
+  width: 100px;
+}
+
+.service-box-headingsize {
+  position: absolute;
+  z-index: 1000;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* -------------------------------footer start here-------------------------------------- */
+
+.footer-bg-color {
+  background-color: #210221;
+}
+
+.footer-text-color {
+  color: #bbb2bb;
+}
+
+.margin-value {
+  margin-left: 0px;
+  margin-top: 50px;
+}
+
+@media (min-width: 992px) {
+  .margin-lg-value {
+    margin-left: -80px;
+    margin-top: -80px;
+  }
+}
