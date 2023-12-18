@@ -1,0 +1,15 @@
+.nav-bg-color {
+  background-color: #210221;
+}
+
+.margin-value {
+  margin-left: 0px;
+  margin-top: 50px;
+}
+
+@media (min-width: 992px) {
+  .margin-lg-value {
+    margin-left: -80px;
+    margin-top: -80px;
+  }
+}
