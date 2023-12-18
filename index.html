@@ -145,76 +145,23 @@
                     ></div>
                   </div>
                   <div class="col-lg-6 col-12 p-4">
-                    <div
-                      class="calander-bg-color d-inline-block p-3 px-5 fw-bolder rounded-2 m-2"
-                    >
-                      <div class="dropdown-container d-flex">
-                        <div>
-                          <i
-                            class="arrow-icon fas fa-chevron-left arraw-color"
-                            onclick="prevMonth()"
-                          ></i>
-                          <select
-                            id="monthSelector"
-                            class="border-0 fw-bold fs-4"
-                            onchange="changeMonth()"
-                          >
-                            <option value="0">January</option>
-                            <option value="1">February</option>
-                            <option value="2">March</option>
-                            <option value="3">April</option>
-                            <option value="4">May</option>
-                            <option value="5">June</option>
-                            <option value="6">July</option>
-                            <option value="7">August</option>
-                            <option value="8">September</option>
-                            <option value="9">October</option>
-                            <option value="10">November</option>
-                            <option value="11">December</option>
-                          </select>
-                          <i
-                            class="arrow-icon fas fa-chevron-right arraw-color"
-                            onclick="nextMonth()"
-                          ></i>
+                    <div class="col-lg-6 col-12 p-4">
+                      <div class="calendar-container">
+                        <header class="calendar-header">
+                            <p class="calendar-current-date"></p>
+                        </header>
+                        <div class="calendar-body">
+                            <ul class="calendar-weekdays">
+                                <li>Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                            </ul>
+                            <ul class="calendar-dates"></ul>
                         </div>
-
-                        <div>
-                          <i
-                            class="arrow-icon fas fa-chevron-left d-block text-center rotated-element w-100"
-                            onclick="prevYear()"
-                          ></i>
-                          <select
-                            class="border-0 fs-2 fw-bold d-block text-center w-100"
-                            id="yearSelector"
-                            onchange="changeYear()"
-                          ></select>
-                          <i
-                            class="arrow-icon fas fa-chevron-right d-block text-center rotated-element w-100"
-                            onclick="nextYear()"
-                          ></i>
-                        </div>
-                      </div>
-
-                      <!-- Input field for date selection -->
-                      <input type="date" class="form-control hide" id="datepicker" />
-
-                      <!-- Calendar container -->
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th class="p-2">S</th>
-                            <th class="p-2">M</th>
-                            <th class="p-2">T</th>
-                            <th class="p-2">W</th>
-                            <th class="p-2">T</th>
-                            <th class="p-2">F</th>
-                            <th class="p-2">S</th>
-                          </tr>
-                        </thead>
-                        <tbody id="calendarBody">
-                          <!-- Calendar dates will be dynamically added here -->
-                        </tbody>
-                      </table>
                     </div>
                     <div class="text-end px-5">
                       <button
@@ -249,77 +196,23 @@
                     ></div>
                   </div>
                   <div class="col-lg-6 col-12 p-4">
-                    <div
-                      class="calander-bg-color d-inline-block p-3 px-5 fw-bolder rounded-2 m-2"
-                    >
-                      <div class="dropdown-container d-flex">
-                        <div>
-                          <i
-                            class="arrow-icon fas fa-chevron-left arraw-color"
-                            onclick="prevMonth()"
-                          ></i>
-                          <select
-                            id="monthSelector"
-                            class="border-0 fw-bold fs-4"
-                            onchange="changeMonth()"
-                          >
-                            <option value="0">January</option>
-                            <option value="1">February</option>
-                            <option value="2">March</option>
-                            <option value="3">April</option>
-                            <option value="4">May</option>
-                            <option value="5">June</option>
-                            <option value="6">July</option>
-                            <option value="7">August</option>
-                            <option value="8">September</option>
-                            <option value="9">October</option>
-                            <option value="10">November</option>
-                            <option value="11">December</option>
-                          </select>
-                          <i
-                            class="arrow-icon fas fa-chevron-right arraw-color"
-                            onclick="nextMonth()"
-                          ></i>
-                        </div>
-
-                        <div>
-                          <i
-                            class="arrow-icon fas fa-chevron-left d-block text-center rotated-element w-100"
-                            onclick="prevYear()"
-                          ></i>
-                          <select
-                            class="border-0 fs-2 fw-bold d-block text-center w-100"
-                            id="yearSelector"
-                            onchange="changeYear()"
-                          ></select>
-                          <i
-                            class="arrow-icon fas fa-chevron-right d-block text-center rotated-element w-100"
-                            onclick="nextYear()"
-                          ></i>
-                        </div>
+                    <div class="calendar-container">
+                      <header class="calendar-header">
+                          <p class="calendar-current-date"></p>
+                      </header>
+                      <div class="calendar-body">
+                          <ul class="calendar-weekdays">
+                              <li>Sun</li>
+                              <li>Mon</li>
+                              <li>Tue</li>
+                              <li>Wed</li>
+                              <li>Thu</li>
+                              <li>Fri</li>
+                              <li>Sat</li>
+                          </ul>
+                          <ul class="calendar-dates"></ul>
                       </div>
-
-                      <!-- Input field for date selection -->
-                      <input type="date" class="form-control hide" id="datepicker" />
-
-                      <!-- Calendar container -->
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th class="p-2">S</th>
-                            <th class="p-2">M</th>
-                            <th class="p-2">T</th>
-                            <th class="p-2">W</th>
-                            <th class="p-2">T</th>
-                            <th class="p-2">F</th>
-                            <th class="p-2">S</th>
-                          </tr>
-                        </thead>
-                        <tbody id="calendarBody">
-                          <!-- Calendar dates will be dynamically added here -->
-                        </tbody>
-                      </table>
-                    </div>
+                  </div>
                     <div class="text-end px-5">
                       <button
                         class="d-inline-block calanderbtn-color mx-5 rounded-1 p-1 px-3"
@@ -353,76 +246,23 @@
                     ></div>
                   </div>
                   <div class="col-lg-6 col-12 p-4">
-                    <div
-                      class="calander-bg-color d-inline-block p-3 px-5 fw-bolder rounded-2 m-2"
-                    >
-                      <div class="dropdown-container d-flex">
-                        <div>
-                          <i
-                            class="arrow-icon fas fa-chevron-left arraw-color"
-                            onclick="prevMonth()"
-                          ></i>
-                          <select
-                            id="monthSelector"
-                            class="border-0 fw-bold fs-4"
-                            onchange="changeMonth()"
-                          >
-                            <option value="0">January</option>
-                            <option value="1">February</option>
-                            <option value="2">March</option>
-                            <option value="3">April</option>
-                            <option value="4">May</option>
-                            <option value="5">June</option>
-                            <option value="6">July</option>
-                            <option value="7">August</option>
-                            <option value="8">September</option>
-                            <option value="9">October</option>
-                            <option value="10">November</option>
-                            <option value="11">December</option>
-                          </select>
-                          <i
-                            class="arrow-icon fas fa-chevron-right arraw-color"
-                            onclick="nextMonth()"
-                          ></i>
+                    <div class="col-lg-6 col-12 p-4">
+                      <div class="calendar-container">
+                        <header class="calendar-header">
+                            <p class="calendar-current-date"></p>
+                        </header>
+                        <div class="calendar-body">
+                            <ul class="calendar-weekdays">
+                                <li>Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                            </ul>
+                            <ul class="calendar-dates"></ul>
                         </div>
-
-                        <div>
-                          <i
-                            class="arrow-icon fas fa-chevron-left d-block text-center rotated-element w-100"
-                            onclick="prevYear()"
-                          ></i>
-                          <select
-                            class="border-0 fs-2 fw-bold d-block text-center w-100"
-                            id="yearSelector"
-                            onchange="changeYear()"
-                          ></select>
-                          <i
-                            class="arrow-icon fas fa-chevron-right d-block text-center rotated-element w-100"
-                            onclick="nextYear()"
-                          ></i>
-                        </div>
-                      </div>
-
-                      <!-- Input field for date selection -->
-                      <input type="date" class="form-control hide" id="datepicker" />
-
-                      <!-- Calendar container -->
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th class="p-2">S</th>
-                            <th class="p-2">M</th>
-                            <th class="p-2">T</th>
-                            <th class="p-2">W</th>
-                            <th class="p-2">T</th>
-                            <th class="p-2">F</th>
-                            <th class="p-2">S</th>
-                          </tr>
-                        </thead>
-                        <tbody id="calendarBody">
-                          <!-- Calendar dates will be dynamically added here -->
-                        </tbody>
-                      </table>
                     </div>
                     <div class="text-end px-5">
                       <button
@@ -462,10 +302,10 @@
       <!-- ----------------------------Product start from here------------------------- -->
       <section class="p-lg-5">
         <div
-          class="d-inline-block col-11 col-lg-3 rounded-4 overflow-hidden product-bg-color m-lg-5 m-3"
+          class="d-inline-block col-11 col-lg-3 rounded-4 overflow-hidden product-bg-color m-lg-5 m-3 p-4"
         >
           <img
-            class="w-100"
+            class="w-100 custom-h-p"
             src="./images/p1.png"
             alt=""
           />
@@ -478,10 +318,10 @@
           </p>
         </div>
         <div
-          class="d-inline-block col-11 col-lg-3 rounded-4 overflow-hidden product-bg-color m-lg-5 m-3"
+          class="d-inline-block col-11 col-lg-3 rounded-4 overflow-hidden product-bg-color m-lg-5 m-3 p-4"
         >
           <img
-            class="w-100"
+            class="w-100 custom-h-p"
             src="./images/p2.png"
             alt=""
           />
@@ -494,10 +334,10 @@
           </p>
         </div>
         <div
-          class="d-inline-block col-11 col-lg-3 rounded-4 overflow-hidden product-bg-color m-lg-5 m-3"
+          class="d-inline-block col-11 col-lg-3 rounded-4 overflow-hidden product-bg-color m-lg-5 m-3 p-4"
         >
           <img
-            class="w-100"
+            class="w-100 custom-h-p"
             src="./images/p3.png"
             alt=""
           />
@@ -510,10 +350,10 @@
           </p>
         </div>
         <div
-          class="d-inline-block col-11 col-lg-3 rounded-4 overflow-hidden product-bg-color m-lg-5 m-3"
+          class="d-inline-block col-11 col-lg-3 rounded-4 overflow-hidden product-bg-color m-lg-5 m-3 p-4"
         >
           <img
-            class="w-100"
+            class="w-100 custom-h-p"
             src="./images/p4.png"
             alt=""
           />
@@ -526,10 +366,10 @@
           </p>
         </div>
         <div
-          class="d-inline-block col-11 col-lg-3 rounded-4 overflow-hidden product-bg-color m-lg-5 m-3"
+          class="d-inline-block col-11 col-lg-3 rounded-4 overflow-hidden product-bg-color m-lg-5 m-3 p-4"
         >
           <img
-            class="w-100"
+            class="w-100 custom-h-p"
             src="./images/p5.png"
             alt=""
           />
@@ -542,10 +382,10 @@
           </p>
         </div>
         <div
-          class="d-inline-block col-11 col-lg-3 rounded-4 overflow-hidden product-bg-color m-lg-5 m-4"
+          class="d-inline-block col-11 col-lg-3 rounded-4 overflow-hidden product-bg-color m-lg-5 m-4 p-4"
         >
           <img
-            class="w-100"
+            class="w-100 custom-h-p"
             src="./images/p6.png"
             alt=""
           />
@@ -686,9 +526,9 @@
       <!-- ----------------------------map end from here------------------------- -->
 
       <!-- ----------------------------footer start from here------------------------- -->
-      <footer class="footer-bg-color text-center p-4">
+      <footer class="footer-bg-color p-4">
         <ul
-          class="d-lg-flex align-lg-items-center justify-lg-content-center m-auto mt-2 mt-lg-0"
+          class="d-lg-flex align-lg-items-center justify-lg-content-center ms-auto mt-2 mt-lg-0"
         >
           <li>
             <a
